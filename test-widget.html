@@ -1,0 +1,42 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript" src="nowplaying.js"></script>
+
+<style type="text/css">
+.rsab-np-last {
+    color: #888888;
+}
+
+.rsab-np-joiner {
+    color: #888888;
+}
+
+.rsab-np-last-joiner {
+    color: #aaaaaa;
+}
+
+</style>
+
+<script type="text/javascript">
+$(function () {
+  $('#rsab-np-test-widget').rsabnowplaying()
+})
+</script>
+
+<h2>Now Playing</h2>
+
+<span class="rsab-np-top" id="rsab-np-test-widget">
+  <p class="rsab-np-current">
+    Current:
+    <span class="rsab-np-title"></span>
+    <span class="rsab-np-joiner"> by </span>
+    <span class="rsab-np-artist"></span>
+  </p>
+
+  <p class="rsab-np-last">
+    Previous:
+    <span class="rsab-np-last-title"></span>
+    <span class="rsab-np-last-joiner"> by </span>
+    <span class="rsab-np-last-artist"></span>
+  </p>
+</span>
